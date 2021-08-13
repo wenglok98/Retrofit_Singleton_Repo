@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ThirdActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="viewEnd"
+        android:layout_height="wrap_content"
+        android:text="Third Page"
+        android:textSize="30sp"
+        android:id="@+id/fp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_below="@id/fp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:id="@+id/last_name_tv"
+            android:text="Default"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:id="@+id/status_tv"
+            android:text="Default"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:id="@+id/contact_number_tv"
+            android:text="Default"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/gender_tv"
+            android:text="Default"></TextView>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next_bt"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Next" />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/next_bt"
+        android:text="Change Data"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Change"/>
+
+
+</RelativeLayout>
